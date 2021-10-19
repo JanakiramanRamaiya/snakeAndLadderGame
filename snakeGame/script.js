@@ -143,11 +143,12 @@ function playerMove(){
             const whichtype = lastVal[1];
             const val = lastVal[2];
             const firstVal = lastVal[0]
-            if(val===1){
+            if(val==="1"){
                 const getele = document.querySelector(`[data-special-cell="${firstVal}-${whichtype}-0"]`);
                 const currentPer = document.querySelector(`[data-id="${playerPosition}"]`)
+                const geteleChild = getele.nextElementSibling
                 currentPer.querySelector('.personPosition').innerText=''
-                getele.querySelector('.personPosition').innerText = 'p1'
+                geteleChild.innerText = 'p1'
                 playerPositionele = getele.closest('[data-id]');
                 playerPosition = playerPositionele.getAttribute(data-id)
             }
