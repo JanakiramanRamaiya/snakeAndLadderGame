@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 1%;
+    color: white;
+}
+.cell{
+    background-color: black;
+}
+.dice__Value{
+    display:inline;
+}
+.specialCell{
+    color: red;
+}
+.personPosition{
+    color: green;
+}
